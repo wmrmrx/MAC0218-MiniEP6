@@ -1,2 +1,2 @@
 docker build -t my-image .
-docker run my-image -p 8000:80 -v ./pages:/usr/src/pages caddy run
+docker run --rm -p 8080:80 -v ./pages:/usr/src/pages my-image caddy run
